@@ -1,10 +1,14 @@
 <template>
-  
+  <Footer>
+        <menu />
+  </Footer>
 </template>
 
 <script>
-export default {
+import Menu from './MenuComponent.vue';
 
+export default {
+    Menu,
 }
 </script>
 
