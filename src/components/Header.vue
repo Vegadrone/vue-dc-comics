@@ -1,8 +1,14 @@
 <template>
   <header>
-    <div class="d-flex justify-content-around">
-      <img src="../assets/img/dc-logo.png" alt="DC-logo" />
-      <NavBar />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex justify-content-around">
+            <img src="../assets/img/dc-logo.png" alt="DC-logo" />
+            <NavBar />
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 </template>
@@ -19,9 +25,9 @@ export default {
 </script>
 
 <style lang="scss">
-    @import "../styles/variables.scss";
+@import "../styles/variables.scss";
 
-    img{
-        height: 5rem;
-    }
+img {
+  height: 5rem;
+}
 </style>
