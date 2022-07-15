@@ -1,14 +1,15 @@
 <template>
   <header>
-    <NavBar />
+    <NavBarComponent />
+    
   </header>
 </template>
 
 <script>
-import NavBar from './NavBarComponent.vue';
+import NavBarComponent from './NavBarComponent.vue';
 
 export default {
-    NavBar,
+    NavBarComponent,
 }
 </script>
 
