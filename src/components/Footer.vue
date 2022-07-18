@@ -65,6 +65,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/variables.scss";
     footer{
         background-image:url(../assets/img/footer-bg.jpg);
     }
@@ -76,11 +77,13 @@ export default {
     h4{
       text-transform: uppercase;
       color: white;
+      font-weight: 600;
     }
 
     ul{
         list-style: none;
-        color: white;
+        color: $textMenuColor;
+        width:calc(100% /2);
     }
 
 </style>

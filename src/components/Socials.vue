@@ -2,9 +2,9 @@
   <nav>
     <div class="container">
       <div class="row">
-        <div class="col-12 d-flex justify-content-between">
-          <a href="#">Sign up now!</a>
-          <ul>
+        <div class="col-12 d-flex justify-content-between align-items-center">
+          <a class="text-light" href="#">Sign up now!</a>
+          <ul class="d-flex align-items-center">
             <li><h4>Follow us</h4></li>
             <li><img src="../assets/img/footer-facebook.png" alt="facebook-logo"></li>
             <li><img src="../assets/img/footer-twitter.png" alt="twitter-logo"></li>
@@ -27,23 +27,27 @@ export default {};
 
     nav{
         background-color: $footerBgColor;
+        padding: 2rem 0rem
     }
 
     ul{
+        height: 100%;
         list-style: none;
+        margin: 0;
     }
+    
 
     li{
-        display: inline-block;
+      display: inline-block;
     }
     
     img{
         height: 3rem;
+        margin-right: 1.5rem;
     }
 
     a{
         border: 2px solid $brandColor;
-        vertical-align: middle;
         text-align: center;
         padding: 1rem;
     }
@@ -53,7 +57,12 @@ export default {};
         text-decoration: none;
         font-size: 1.8rem;
         text-transform: uppercase;
-        color: white;
+        font-weight: bold;
+    }
+
+    h4{
+      color: $brandColor;
+       margin: 0rem 2rem;
     }
 
     
