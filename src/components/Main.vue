@@ -1,6 +1,6 @@
 <template>
   <main>
-    <img class="jumbotron" src="../assets/img/jumbotron.jpg" alt="Hero.img" />
+    <div class="jumbotron"></div>
     <div class="container">
       <div class="row">
         <div class="col-12 wrapper d-flex flex-wrap">
@@ -15,16 +15,20 @@
         </div>
       </div>
     </div>
+    <Products/>
   </main>
 </template>
 
 <script>
 import ComicCard from "./ComicCard.vue";
+import Products from './Products.vue';
 
 export default {
   name: "Main",
   components: {
     ComicCard,
+    Products,
+    Products
   },
 
   data: function () {
@@ -127,9 +131,9 @@ main {
 }
 
 .jumbotron {
+  background-image: url(../assets/img/jumbotron.jpg);
   width: 100%;
-  height: 50rem;
-  object-fit: cover;
+  height: 25rem;
 }
 
 .container {
