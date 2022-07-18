@@ -1,8 +1,8 @@
 <template>
   <footer>
     <div class="container">
-      <div class="row">
-        <div class="col-3 d-flex">
+      <div class="row d-flex">
+        <div class="col-6 d-flex" >
           <h4>Dc comics</h4>
           <ul>
             <li>Characters</li>
@@ -16,58 +16,36 @@
             <li>News</li>
             <li>Shop</li>
           </ul>
-          <h4>Dc comics</h4>
+          <h4>Shop</h4>
           <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>Tv</li>
-            <li>Games</li>
-            <li>Collectibles</li>
-            <li>Videos</li>
-            <li>Fans</li>
-            <li>News</li>
-            <li>Shop</li>
+            <li>Shop DC</li>
+            <li>Shop DC Collectibles</li>
           </ul>
-          <h4>Dc comics</h4>
+          <h4>Dc</h4>
           <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>Tv</li>
-            <li>Games</li>
-            <li>Collectibles</li>
-            <li>Videos</li>
-            <li>Fans</li>
-            <li>News</li>
-            <li>Shop</li>
+            <li>Term Of Use</li>
+            <li>Privacy Policy(New)</li>
+            <li>Ad Choices</li>
+            <li>Advertising</li>
+            <li>Jobs</li>
+            <li>Subscriptions</li>
+            <li>Talent Workshops</li>
+            <li>CPSC Certificates</li>
+            <li>Ratings</li>
+            <li>Shop Help</li>
+            <li>Contact Us</li>
           </ul>
-          <h4>Dc comics</h4>
+          <h4>Sites</h4>
           <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>Tv</li>
-            <li>Games</li>
-            <li>Collectibles</li>
-            <li>Videos</li>
-            <li>Fans</li>
-            <li>News</li>
-            <li>Shop</li>
+            <li>DC</li>
+            <li>MAD Magazine</li>
+            <li>DC Kids</li>
+            <li>DC Univers</li>
+            <li>DC Power Visa</li>
           </ul>
-          <h4>Dc comics</h4>
-          <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>Tv</li>
-            <li>Games</li>
-            <li>Collectibles</li>
-            <li>Videos</li>
-            <li>Fans</li>
-            <li>News</li>
-            <li>Shop</li>
-          </ul>
+        </div>
+        <div class="col-6">
+          <img src="../assets/img/dc-logo-bg.png" alt="">
         </div>
       </div>
     </div>
@@ -88,14 +66,21 @@ export default {
 
 <style lang="scss" scoped>
     footer{
-        background-image: url(../assets/img/dc-logo-bg.png), url(../assets/img/footer-bg.jpg);
-        background-position: right bottom, left top;
-        background-repeat: no-repeat, repeat;
+        background-image:url(../assets/img/footer-bg.jpg);
+    }
+
+    .container{
+      padding: 3rem 0rem
+    }
+
+    h4{
+      text-transform: uppercase;
+      color: white;
     }
 
     ul{
         list-style: none;
-        color: white
+        color: white;
     }
 
 </style>

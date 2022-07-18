@@ -2,7 +2,7 @@
   <div class="background">
     <div class="container">
       <div class="row d-flex">
-        <div class="col d-flex align-items-center" v-for="(img, index) in imgList" :key="index">
+        <div class="col d-flex align-items-center justify-content-center" v-for="(img, index) in imgList" :key="index">
             <img :src="require(`../assets/img/buy-${img.imgPath}`)" alt="img.alt">
             <h6 class="text-light text-uppercase">{{img.text}}</h6>
         </div>
@@ -57,7 +57,7 @@ export default {
 
 img{
     height: 4rem;
-    width: 3.3rem;
+    width: 3rem;
     margin-right: 0.8rem;
 }
 </style>
