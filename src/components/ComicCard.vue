@@ -1,7 +1,7 @@
 <template>
   <div class="comic-card">
     <img :src="cover" :alt="series" />
-    <h5 class="fw-bold text-light mt-2 fs-6">{{series}}</h5>
+    <h5 class="fw-bold text-light mt-3 fs-6">{{series}}</h5>
   </div>
 </template>
 

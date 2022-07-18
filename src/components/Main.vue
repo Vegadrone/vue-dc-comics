@@ -10,6 +10,9 @@
               :series="comic.series"
               :type="comic.type" />
         </div>
+        <div class="col-12 d-flex justify-content-center">
+          <button class="btn btn-primary fw-bold">Load More</button>
+        </div>
       </div>
     </div>
   </main>
@@ -135,5 +138,11 @@ main {
 
 .wrapper {
   height: 50rem;
+}
+
+button{
+  text-transform: uppercase;
+  padding: 1rem 6rem;
+  margin: 2rem;
 }
 </style>
