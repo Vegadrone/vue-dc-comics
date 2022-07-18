@@ -28,6 +28,6 @@ export default {
 @import "../styles/variables.scss";
 
 img {
-  height: 5rem;
+  height: 4rem;
 }
 </style>
