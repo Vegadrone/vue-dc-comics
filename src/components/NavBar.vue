@@ -29,6 +29,7 @@ export default {};
 @import "../styles/variables.scss";
 ul {
   list-style: none;
+  height: 100%;
 }
 
 li {
@@ -37,6 +38,7 @@ li {
   padding: 2rem 0rem;
   border: 3px solid transparent;
   font-size: 0.8;
+  
 
   &:hover {
     color: $brandColor;

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="d-flex justify-content-around">
+          <div class="d-flex justify-content-around align-items-center">
             <img src="../assets/img/dc-logo.png" alt="DC-logo" />
             <NavBar />
           </div>
@@ -24,7 +24,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "../styles/variables.scss";
 
 img {
