@@ -95,6 +95,7 @@ export default {
 
     ul{
         list-style: none;
+        color: white
     }
 
 </style>

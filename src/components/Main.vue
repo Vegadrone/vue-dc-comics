@@ -8,7 +8,6 @@
             <div class="comic-card" v-for="(comic, index) in comics" :key="index">
               <img :src="comic.thumb" :alt="comic.series">
               <h5>{{comic.series}}</h5>
-        
             </div>
           </div>
         </div>
