@@ -3,13 +3,11 @@
     <img class="jumbotron" src="../assets/img/jumbotron.jpg" alt="Hero.img" />
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <div class="wrapper d-flex flex-wrap">
+        <div class="col-12 wrapper d-flex flex-wrap">
             <div class="comic-card" v-for="(comic, index) in comics" :key="index">
               <img :src="comic.thumb" :alt="comic.series">
-              <h5>{{comic.series}}</h5>
+              <h5 class="fw-bold text-light mt-2 fs-6">{{comic.series}}</h5>
             </div>
-          </div>
         </div>
       </div>
     </div>
@@ -111,10 +109,11 @@ export default {
 };
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 @import "../styles/variables.scss";
 main {
   background-color: $bgColor;
+  
 }
 
 .jumbotron {
@@ -123,18 +122,16 @@ main {
   object-fit: cover;
 }
 
-.wrapper {
-  padding: 5rem;
+.container{
+  margin-top:5rem;
+}
+
+.wrapper{
+  height:50rem;
 }
 
 .comic-card {
   width: calc(100% / 6);
   height: 4rem;
-  padding: 5rem;
-  margin: 5rem 0rem;
-
-  .comic-card.img {
-    width: 100%;
-  }
 }
 </style>
