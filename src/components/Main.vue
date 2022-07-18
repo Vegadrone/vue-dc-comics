@@ -4,10 +4,11 @@
     <div class="container">
       <div class="row">
         <div class="col-12 wrapper d-flex flex-wrap">
-            <div class="comic-card" v-for="(comic, index) in comics" :key="index">
-              <img :src="comic.thumb" :alt="comic.series">
-              <h5 class="fw-bold text-light mt-2 fs-6">{{comic.series}}</h5>
-            </div>
+          <ComicCard v-for="(comic, index) in comics" :key="index" 
+              :cover="comic.thumb"
+              :price="comic.price"
+              :series="comic.series"
+              :type="comic.type" />
         </div>
       </div>
     </div>
@@ -15,7 +16,14 @@
 </template>
 
 <script>
+import ComicCard from "./ComicCard.vue";
+
 export default {
+  name: "Main",
+  components: {
+    ComicCard,
+  },
+
   data: function () {
     return {
       comics: [
@@ -113,7 +121,6 @@ export default {
 @import "../styles/variables.scss";
 main {
   background-color: $bgColor;
-  
 }
 
 .jumbotron {
@@ -122,16 +129,11 @@ main {
   object-fit: cover;
 }
 
-.container{
-  margin-top:5rem;
+.container {
+  margin-top: 5rem;
 }
 
-.wrapper{
-  height:50rem;
-}
-
-.comic-card {
-  width: calc(100% / 6);
-  height: 4rem;
+.wrapper {
+  height: 50rem;
 }
 </style>
