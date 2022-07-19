@@ -20,6 +20,7 @@ export default {
 <style lang="scss" scoped>
   .comic-card {
     width: calc(100% / 6);
+    padding: 1rem;
 
       img{
         height: 12rem;

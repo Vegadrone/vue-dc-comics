@@ -142,10 +142,6 @@ main {
   position: relative;
 }
 
-.wrapper {
-  height: 50rem;
-}
-
 .flag{
   background-color: $brandColor;
   position: absolute;
