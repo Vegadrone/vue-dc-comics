@@ -20,6 +20,12 @@ export default {
 <style lang="scss" scoped>
   .comic-card {
     width: calc(100% / 6);
-    height: 4rem;
+
+      img{
+        height: 12rem;
+        width: 12rem;
+        object-fit: cover;
+        object-position: top;
+      }
   }
 </style>
