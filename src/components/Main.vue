@@ -4,6 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 wrapper d-flex flex-wrap">
+          <div class="flag text-uppercase fw-bold text-light fs-3">current series</div>
           <ComicCard v-for="(comic, index) in comics" :key="index" 
               :cover="comic.thumb"
               :price="comic.price"
@@ -138,10 +139,19 @@ main {
 
 .container {
   margin-top: 5rem;
+  position: relative;
 }
 
 .wrapper {
   height: 50rem;
+}
+
+.flag{
+  background-color: $brandColor;
+  position: absolute;
+  top:-120px;
+  left: 0;
+  padding:1rem;
 }
 
 button{
